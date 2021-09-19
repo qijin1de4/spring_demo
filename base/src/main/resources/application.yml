@@ -1,0 +1,32 @@
+server:
+  port: 18001
+
+spring:
+  application:
+    name: base
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露所有Actuator接口到HTTP
+        include: "*"
+  #show detailed git info in Actuator interface
+  info:
+    git:
+      mode: full
+
+logging:
+  level:
+    io:
+      netty: info
+      reactor: info
+
+demo:
+  reactive:
+    images:
+      uploadDir: c:/hqj/xxx/tmp

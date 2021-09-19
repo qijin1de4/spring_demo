@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "demo.reactive.images.uploadDir",
+      "type": "java.lang.String",
+      "description": "Description for demo.reactive.images.uploadDir."
+  }
+] }
